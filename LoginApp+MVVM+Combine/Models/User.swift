@@ -6,6 +6,6 @@
 //
 
 struct User {
-    let user: String?
+    let login: String?
     let password: String?
 }
