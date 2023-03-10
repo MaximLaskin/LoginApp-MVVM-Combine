@@ -34,20 +34,19 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4In-EQ-IY7">
                                 <rect key="frame" x="173.5" y="523.5" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDm-JJ-gnt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yac-3V-dzC">
-                                <rect key="frame" x="182.5" y="584.5" width="49" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yac-3V-dzC">
+                                <rect key="frame" x="207" y="584.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sl-c4-b6E">
-                                <rect key="frame" x="186" y="321" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sl-c4-b6E">
+                                <rect key="frame" x="186" y="321.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,6 +58,8 @@
                             <constraint firstItem="yac-3V-dzC" firstAttribute="top" secondItem="4In-EQ-IY7" secondAttribute="bottom" constant="30" id="05i-2G-dNh"/>
                             <constraint firstItem="SRL-Ha-sMT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bs-Gh-cvZ"/>
                             <constraint firstItem="4In-EQ-IY7" firstAttribute="top" secondItem="SRL-Ha-sMT" secondAttribute="bottom" constant="30" id="6vR-Rk-OXI"/>
+                            <constraint firstItem="2sl-c4-b6E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8aw-3j-nwJ"/>
+                            <constraint firstItem="SRL-Ha-sMT" firstAttribute="top" secondItem="2sl-c4-b6E" secondAttribute="bottom" constant="60.5" id="FxN-oU-cDL"/>
                             <constraint firstItem="SRL-Ha-sMT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kzn-YO-RJt"/>
                             <constraint firstItem="4In-EQ-IY7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V4o-dU-qWb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SRL-Ha-sMT" secondAttribute="trailing" constant="20" id="bvg-F9-nkt"/>

@@ -26,19 +26,21 @@ final class LoginViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-
+        super.viewDidLoad()
+        bindViewModel()
+        initialState()
     }
 
     func bindViewModel() {
         NotificationCenter.default
             .publisher(for: UITextField.textDidChangeNotification, object: loginTextField)
-            .map { ($0.object as! UITextField).text ?? "" }
+            .map { ($0.object as? UITextField)?.text ?? "" }
             .assign(to: \.email, on:  viewModel)
             .store(in: &cancellables)
 
         NotificationCenter.default
             .publisher(for: UITextField.textDidChangeNotification, object: passwordTextField)
-            .map { ($0.object as! UITextField).text ?? "" }
+            .map { ($0.object as? UITextField)?.text ?? "" }
             .assign(to: \.password, on:  viewModel)
             .store(in: &cancellables)
 
@@ -69,7 +71,6 @@ final class LoginViewController: UIViewController {
             }
             .store(in: &cancellables)
     }
-
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         viewModel.submitLogin()
