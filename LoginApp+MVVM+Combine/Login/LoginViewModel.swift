@@ -10,7 +10,7 @@ import Combine
 
 enum ViewStates {
     case loading
-    case succes
+    case success
     case failed
     case none
 }
@@ -45,7 +45,7 @@ class LoginViewModel {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
             guard let self = self else { return }
             if self.isCorrectLogin() {
-                self.state = .succes
+                self.state = .success
             } else {
                 self.state = .failed
             }
